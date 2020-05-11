@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="storage.js"></script>
+        <title>Registration Form</title>
+    </head>
+
+    <body>
+        
+        <div class="header">
+            <h1>Online Shopping Website</h1>
+        </div>
+        <div class="row">
+            <div class="co-3 col-s-3 menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">Go to Cart</a></li>
+                    <li><a href="multimedia.html">SVG and Multimedia</a></li>
+                    <li><a href="form.html">Registration Form</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-s-9">
+                <fieldset>
+                    <legend><h1>Register</h1></legend>
+                    <form>
+                        <p>
+                            <label for="name">Full Name:</label>
+                            <input pattern="^(\w\w+)\s(\w+)$" id="name" type="text" name="name" placeholder="Full Name">
+                        </p>
+                        <p>
+                            <label for="contact">Contact:</label>
+                            <input id="contact" pattern="[7-9]{1}[0-9]{9}" type="tel" name="contact" placeholder="Contact">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input id="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="email" placeholder="Email">
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" name="password" placeholder="Enter 8+ char">
+                        </p>
+                        </fieldset>
+                        <p>
+                            <input type="submit" name="submit" value="Submit Form">
+                        </p>
+                    </form>
+            </div>
+            <div class="col-3 col-s-12">
+                <div class="aside">
+                    <h2>What?</h2>
+                    <p>Hire a developer or register as one.</p>
+                    <h2>Where?</h2>
+                    <p>Work on remote locations or anywhere you choose</p>
+                    <h2>How?</h2>
+                    <p>Simply register yourself and wait for profile approval.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>This is a responsive webiste! Change width of browser to check responsiveness.</p>
+        </div>
+    </body>
+</html> 

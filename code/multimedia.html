@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="storage.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Best Developers Website</h1>
+        </div>
+        <div class="row">
+            <div class="co-3 col-s-3 menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">Go to Cart</a></li>
+                    <li><a href="multimedia.html">SVG and Multimedia</a></li>
+                    <li><a href="form.html">Registration Form</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-s-9">
+                    <h1>SVG and Multimedia</h1>
+                    <svg height="140" width="140">
+                        <defs>
+                          <filter id="f3" x="0" y="0" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                          </filter>
+                        </defs>
+                        <rect width="90" height="90" stroke="darkblue" stroke-width="3"
+                        fill="#33b5e5" filter="url(#f3)" />
+                      </svg>
+               
+                <video id="video1" width="500" height="350" controls>
+                    <source src="../images/multimedia video.mp4" type="video/mp4">
+                        Please update your browser!
+                </video>
+                <div style="width:400px;text-align: center;">
+                    <button onclick="playPause()" >Play/Pause</button>
+                    <button onclick="makeBig()" >Big</button>
+                    <button onclick="makeSmall()" >Small</button>
+                    <button onclick="makeNormal()" >Normal</button>
+                </div>
+                <script>
+                    var firstVideo=document.getElementById('video1');
+                    function playPause(){
+                        if(firstVideo.paused){
+                            firstVideo.play();
+                        }else{
+                            firstVideo.pause();
+                        }
+                    }
+                    function makeBig(){
+                        firstVideo.width=560;
+                    }
+                    function makeSmall(){
+                        firstVideo.width=360;
+                    }
+                    function makeNormal(){
+                        firstVideo.width=500;
+                    }
+                </script>
+            </div>
+            <div class="col-3 col-s-12">
+                <div class="aside">
+                    <h2>What?</h2>
+                    <p>Hire a developer or register as one.</p>
+                    <h2>Where?</h2>
+                    <p>Work on remote locations or anywhere you choose</p>
+                    <h2>How?</h2>
+                    <p>Simply register yourself and wait for profile approval.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>This is a responsive webiste! Change width of browser to check responsiveness.</p>
+        </div>
+    </body>
+</html>
