@@ -6,4 +6,4 @@ This project aims to cover important features of HTML5 as mentioned in descripti
 
 No imports are needed to use this project. 
 
-
+@author: [Roshada A](roshadaafzal.tech)
